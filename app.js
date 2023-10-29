@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
-const querystring = require("querystring");
+const path = require("path");
 const port = process.env.PORT || 3001;
+const querystring = require("querystring");
 const redirect_uri = "http://localhost:3001/auth";
 const axios = require("axios");
 require("dotenv").config();
@@ -9,7 +10,7 @@ require("dotenv").config();
 let resultData = null;
 
 app.set("view engine", "ejs");
-app.set("views", "./views");
+app.set("views", path.join(__dirname, "views"));
 
 app.use(express.json());
 
