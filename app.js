@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 const port = process.env.PORT || 3001;
 const querystring = require("querystring");
-const redirect_uri = "http://localhost:3001/auth";
+const redirect_uri = "https://test-spotify-api-gamma.vercel.app/auth";
 const axios = require("axios");
 require("dotenv").config();
 
