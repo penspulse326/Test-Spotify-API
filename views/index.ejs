@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h2>Your Top 10 in Spotify</h2>
+      <section>
+        <p>
+          這是一個小小ㄉ程式練習，試試看怎麼串接 Spotify 的<br />
+          API 服務，點擊下方連結授權登入就可以跑出結果了！<br />
+          <br />
+          *此授權僅用於向 Spotify 伺服器請求您最近一個月的最常聽的 10
+          首歌，不會保留任何個資，如有疑慮請斟酌使用。<br />
+          <br />
+          因為作業只要求研究產品類型的 API
+          而已，我就不花時間美化ㄌ，拜託不要鞭我的排版&#x1F972;<br />
+          <br />
+          P.S. Spotify API
+          沒有給語系請求的方式，我沒辦法強制改它，所以歌手名稱不一定顯示原文還請見諒
+          &#x1F602;
+        </p>
+        <a href="/login">點此連結產生結果</a>
+      </section>
+    </main>
+  </body>
+  <style>
+    * {
+      color: white;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 20px;
+      background-color: #1dd05d;
+
+      text-align: center;
+    }
+
+    main {
+      margin: 0 auto;
+      max-width: 375px;
+
+      background-color: black;
+    }
+
+    section {
+      display: flex;
+      flex-flow: column;
+      gap: 12px;
+
+      margin: 0;
+      padding: 24px 12px;
+    }
+
+    p {
+      margin: 0;
+
+      font-size: 14px;
+    }
+
+    a {
+      align-self: flex-end;
+      padding: 4px 12px;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+  </style>
+</html>

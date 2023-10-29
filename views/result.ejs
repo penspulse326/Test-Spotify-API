@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h2>你最近一個月最常聽的歌！</h2>
+      <ul>
+        <% data.forEach((item, index) => { %>
+        <li>
+          <img src="<%= item.album.images[2].url %>" alt=""/ >
+          <div>
+            <p><%=item.artists[0].name %></p>
+            <p><%= item.name %></p>
+          </div>
+        </li>
+        <% }); %>
+      </ul>
+    </main>
+  </body>
+  <style>
+    * {
+      color: white;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 20px;
+      background-color: #1dd05d;
+
+      text-align: center;
+    }
+
+    main {
+      margin: 0 auto;
+      max-width: 375px;
+
+      background-color: black;
+    }
+
+    ul {
+      display: flex;
+      flex-flow: column;
+      gap: 12px;
+
+      margin: 0;
+      padding: 24px 12px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      color: white;
+      font-size: 14px;
+    }
+
+    img {
+      display: block;
+    }
+  </style>
+</html>
