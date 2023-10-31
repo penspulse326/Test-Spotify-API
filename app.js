@@ -72,6 +72,8 @@ async function sendGetTopTracksRequest(data) {
   const config = {
     headers: {
       Authorization: `Bearer ${data.access_token}`,
+      "Accept-Language":
+        "zh,ja-JP;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6,zh-CN;q=0.5,zh-TW;q=0.4",
     },
   };
 
